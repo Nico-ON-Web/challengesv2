@@ -13,9 +13,14 @@ function saveExo(id){
 
 function getDone(){
     const store =localStorage.getItem('exos')?.split(",")
-    if(store[0] != ""){
-        return store
+    if(store){
+        if(store[0] != ""){
+            return store
+        }else{
+            return null
+        }
     }
+    
     return null
 
 }
