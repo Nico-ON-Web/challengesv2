@@ -56,7 +56,7 @@ points.innerHTML = await comptePoints()
     let doneID = getDone()
     const divDone = document.getElementById("done")
     divDone.innerHTML = ""
-    if(doneID != null){
+    if(doneID.length>0){
         doneID.forEach(async (id)=>{
             // On affiche les exos faits a gauche
             const exo = await filterdata(id)
