@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Challenges JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <header>
+        <div></div>
+        <div class="avatar">
+            <p id="points"><span></span> 🏆</p>
+           
+        </div>
+    </header>
+    <div class="flex justify-between">
+        <div class="gauche">
+            <div class="sticky">
+                <img src="./assets/Coding.png" alt="" class="droite">   
+                <h1>Mini challenges JS</h1>
+                <p>Des petits defis pour progresser et se challenger</p>
+                
+                <div class="mt32 border faits">
+                    <h2>Mes Victoires :</h2>
+                    <div id="done">
+                        Aucun défi n'a été validé ! Valide des defis pour gagner des points !
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            
+        </div>
+        <div class="droite mt32">
+            <div class="filters">
+                <button data-status="masquer" id="masquer" class="btn">masquer les défis réalisés</button>
+            </div>
+            <div class="slider-contanier">
+                <div class="slides flex gap16">
+                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/store.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</body>
+
+</html>

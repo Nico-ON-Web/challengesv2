@@ -1,0 +1,71 @@
+[
+    {
+        "id":1,
+        "titre": "Shop en ligne",
+        "illustration": "./assets/shop_illu.jpg",
+        "sujet" : "./exos/shop_exo.jpg",
+        "niveau": 1,
+        "resume" : "selectionnez un produit et ajouter au panier"
+    },
+    {
+        "id":2,
+        "titre": "Le Traducteur minion",
+        "illustration": "./assets/minion_illu.jpg",
+        "sujet" : "./exos/minion_exo.jpg",
+        "niveau": 2,
+        "resume" : "traduire une phrase en langage 'Minion'"
+    },
+    {
+        "id":3,
+        "titre": "Chat JSP",
+        "illustration": "./assets/chatjsp_illu.jpg",
+        "sujet" : "./exos/chatjsp_exo.jpg",
+        "niveau": 1,
+        "resume" : "un chatbot un peu a coté de la plaque"
+    },
+    {
+        "id":4,
+        "titre": "A vos marques !",
+        "illustration": "./assets/chronometre_illu.jpg",
+        "sujet" : "./exos/chronometre_exo.jpg",
+        "niveau": 2,
+        "resume" : "Un chronomètre en js"
+    },
+    {
+        "id":5,
+        "titre": "Super - Héro",
+        "illustration": "./assets/superheros_illu.jpg",
+        "sujet" : "./exos/superheros_exo.jpg",
+        "niveau": 2,
+        "resume" : "Un générateur de nom de super heros aléatoire"
+    },
+    {
+        "id":6,
+        "titre": "To Do list express",
+        "illustration": "./assets/todo_illu.jpg",
+        "sujet" : "./exos/todolist_exo.jpg",
+        "niveau": 2,
+        "resume" : "Un chronomètre en js"
+    },
+    {
+        "id":7,
+        "titre": "Pixel Art Creator",
+        "illustration": "./assets/pixelart_illu.jpg",
+        "sujet" : "./exos/pixelart_exo.jpg",
+        "niveau": 3,
+        "resume" : "Une grille pour dessiner en pixel art"
+    },
+    {
+        "id":8,
+        "titre": "Au fil du jour",
+        "illustration": "./assets/jour_illu.jpg",
+        "sujet" : "./exos/jour_exo.jpg",
+        "niveau": 2,
+        "resume" : "un contenu qui change en fonction de l'heure qu'il est"
+    }
+
+
+
+
+
+]

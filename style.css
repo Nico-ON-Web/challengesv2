@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root{
+    --dark: #1b1a1a;
+    --yellow: #FDB801;
+    --light: #FFF2E9;
+    --marron: #BA7200;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./assets/bg.jpg");
+    background-attachment: fixed;
+    color: var(--dark);
+    font-family: "Kodchasan";
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.gap16{
+    gap: 16px;
+}
+
+.gauche{
+    width: 30%
+}
+
+.droite{
+    width: 66%;
+}
+.responsive{
+    width: 100%;
+}
+
+.mt32{
+    margin-top: 32px;
+}
+.slide{
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--light);
+    width: 300px;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--dark);
+    transition: background-color .3s ease;
+    overflow: hidden;
+    img{
+        width: 100%;
+        border-radius: 4px;
+        height: 200px;
+        
+    }
+}
+
+.slide:hover{
+    background-color: #fff;  
+}
+.slide.disabled{
+    filter:brightness(0.4) grayscale(1)
+}
+
+.border{
+    border: solid 3px var(--dark);
+    border-right: solid 6px var(--dark);
+    border-bottom: solid 9px var(--dark);
+}
+
+.niveau{
+    font-size: 12px;
+    span{
+        font-size: 22px;
+    }
+}
+.resume{
+    margin-top: 8px;
+}
+
+.sticky{
+    position: sticky;
+    top: 64px;
+    padding: 32px;
+    backdrop-filter: blur(6px);
+   
+    height: calc(100vh - 64px);
+}
+
+.btn{
+    border: solid 3px var(--dark);
+    border-right: solid 6px var(--dark);
+    border-bottom: solid 9px var(--dark);
+    background-color: var(--yellow);
+    color: var(--dark);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 16px 23px;
+    border-radius: 16px;
+    transition: filter 0.1s ease, border 0.1s ease;
+    margin-top: 64px;
+}
+
+button[data-status='valider']{
+    background-color: rgb(37, 158, 6);
+}
+
+button[data-status='retirer']{
+    background-color: rgb(252, 83, 5);
+}
+.btn:hover{
+    border-right: solid 3px var(--dark);
+    border-bottom: solid 5px var(--dark);
+    filter: brightness(0.9);
+}
+
+.container{
+    margin-top: 64px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+   
+} 
+#container img{
+    margin-top: 32px;
+        width: 95%;
+        border-radius: 16px;
+}
+
+.vignette{
+    width : 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 3px solid var(--dark);
+}
+
+#description{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    h1{
+        margin-top: -16px;
+    }
+}
+
+header{
+    background-color: var(--dark);
+    height: 64px;
+    position: sticky;
+    top: 0;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    z-index: 99;
+    justify-content: space-between;
+}
+
+.retour{
+    display: inline-block;
+    color: var(--dark);
+    background-color: var(--yellow);
+    border: solid 3px var(--dark);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.retour:hover{
+    filter: brightness(0.9);
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    
+    gap: 16px;
+    #points{
+        color: var(--yellow);
+        font-size: 28px;
+    }
+   
+}
+
+.slideDNone{
+    display: none;
+}
+
+.filters{
+    margin-bottom: 16px;
+}
+.faits{
+    padding: 16px;
+    border-radius: 16px;
+    background-color: var(--light);
+    h2{
+        margin-bottom: 16px;
+    }
+    div{
+        margin-bottom: 8px;
+    }
+}
+
+#masquer{
+    margin-top: 0;
+    font-size: 18px;
+    padding: 8px 16px;
+}
