@@ -17,11 +17,11 @@ function getDone(){
         if(store[0] != ""){
             return store
         }else{
-            return null
+            return []
         }
     }
     
-    return null
+    return []
 
 }
 

@@ -3,6 +3,7 @@ let description = document.getElementById("description")
 
 const exoId = location.href.split("?id=")[1]
 
+
 const faits = getDone()
 
 
