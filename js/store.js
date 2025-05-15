@@ -11,6 +11,35 @@ function saveExo(id){
     }
 }
 
+function saveBadge(id){
+    const st = localStorage.getItem('badges')
+    if(st){
+        const temp = st.split(",")
+        if(!temp.includes(id.toString())){
+            temp.push(parseInt(id))
+            localStorage.setItem("badges",temp.join(","))
+        }
+        
+        
+
+    }else{
+        localStorage.setItem("badges",[id])
+    }
+}
+
+function getBadges(){
+ const store =localStorage.getItem('badges')?.split(",")
+    if(store){
+        if(store[0] != ""){
+            return store
+        }else{
+            return []
+        }
+    }
+    
+    return []
+}
+
 function getDone(){
     const store =localStorage.getItem('exos')?.split(",")
     if(store){

@@ -87,3 +87,25 @@ function buildNiveauPictos(n){
     return niv
 }
 
+console.log("%cTu as bien fait d' ouvrir la console !", "font-size: 32px; color: orangered")
+console.log("%c Va voir ici : http://127.0.0.1:5500/eggs.html?token=123456","font-size: 18px")
+
+
+const divBadges = document.querySelector("#badges")
+
+function updateBadges(){
+fetch("./badges.json").then(rep=>rep.json()).then(data=>{
+    const mybages=getBadges()
+    divBadges.innerHTML = ""
+    data.forEach(b=>{
+        if(mybages.includes(b.id.toString())){
+            divBadges.innerHTML += `<div class="badge-item">
+                <img src="${b.image}" title="${b.titre}" alt='${b.titre}'/>
+                
+            </div>`
+        }
+    })
+})
+}
+
+updateBadges()

@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "titre":"Fouineur de console",
+        "image":"./assets/badges/fouineur.jpg"
+    },
+    {
+        "id":2,
+        "titre":"Farfouilleur de code",
+        "image":"./assets/badges/farfouilleur.jpg"
+    },
+    {
+        "id":3,
+        "titre":"Cliqueur intenpestif",
+        "image":"./assets/badges/cliqueur.jpg"
+    },
+    {
+        "id":4,
+        "titre":"Hackeur de mot de passe",
+        "image":"./assets/badges/hackeur.jpg"
+    }
+]
