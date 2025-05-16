@@ -16,9 +16,20 @@ body{
     background-attachment: fixed;
     color: var(--dark);
     font-family: "Kodchasan";
+    font-size: 14px;
 }
 a{
     text-decoration: none;
+}
+
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 16px;
 }
 
 .flex{
@@ -99,7 +110,7 @@ a{
 }
 .sticky>img.droite{
     margin-top: -80px;
-   
+    width: 40%;
 }
 
 .btn{
@@ -108,7 +119,7 @@ a{
     border-bottom: solid 9px var(--dark);
     background-color: var(--yellow);
     color: var(--dark);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     padding: 16px 23px;
     border-radius: 16px;
@@ -204,14 +215,15 @@ header{
     margin-bottom: 16px;
 }
 .faits{
-    padding: 16px;
-    border-radius: 16px;
+    padding: 8px;
+    border-radius: 8px;
     background-color: var(--light);
+    font-size: 14px;
     h2{
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
     div{
-        margin-bottom: 8px;
+        margin-bottom:5px;
     }
 }
 
@@ -275,4 +287,80 @@ header{
     img{
         width: 100%;
     }
+}
+
+#clickable{
+    width: 32px;
+    height: 32px;
+}
+#clickable:hover{
+    background-color: #222121
+}
+
+#popup{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000096;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div.modal{
+        width: 65%;
+        padding: 32px;
+        background-color: var(--light);
+        border-radius: 16px;
+        transform: translateY(-100vh);
+        transition: transform 0.6s ease;
+        img{
+            width: 150px;
+            margin-top: 16px;
+        }
+    }
+    display: none;
+}
+
+.mentions{
+    padding: 32px;
+    border-radius: 32px;
+    background-color: var(--light);
+    input{
+        margin-right: 16px;
+    }
+}
+
+/*
+
+#deco{
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    img{
+        width: 200px
+    }
+    .triangle{
+        position: fixed;
+        right: -32px;
+        top: 64px
+    }
+    .demi-cercle{
+        position: fixed;
+        right: 16px;
+        rotate: 164deg;
+        bottom: 32px
+    }
+    .rectangle{
+        position: fixed;
+        top: 70%;
+        left: 25%
+    }
+}*/
+
+.modal-coupes{
+    font-size: 64px;
 }

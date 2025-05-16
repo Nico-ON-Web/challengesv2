@@ -4,14 +4,14 @@ let description = document.getElementById("description")
 const exoId = location.href.split("?id=")[1]
 const faits = getDone()
 
-
+let globalExo=null ;
 
 fetch("./exos.json")
 .then(rep=>rep.json())
 .then(exos =>{
     exos.forEach(exo=>{
         if(exo.id == exoId){
-
+          globalExo= exo
             // si l'exo a deja eté fait
             let callback;
             if(faits != null && faits.includes(exo.id.toString())){
@@ -44,6 +44,7 @@ function handleClick(e){
     if(status == "valider"){
         console.log("valider")
         saveExo(id)
+        popVictoire(globalExo)
         e.target.setAttribute("data-status","retirer")
         e.target.innerHTML = "Retirer"
         makeConfetis()

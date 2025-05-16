@@ -11,6 +11,7 @@
 <body>
      <header>
         <div></div>
+        <div id="clickable"></div>
         <div class="avatar">
             <p id="points"><span></span> 🏆</p>
            
@@ -49,15 +50,24 @@
 
                 </div>
             </div>
-            <div>
-                <h2></h2>
+            <div class="mt32">
+                <h2>Autres infos</h2>
+                <p>Ben non, y'en a pas, enfin si les <a href="mentions.html">Mention légales obligatoires</a></p>
             </div>
+
         </div>
     </div>
     <div>
-        
+    <div id="popup">
+        <div class="modal border">
+            <div id="popupContent"></div>
+            <button id="closeModal" class="btn">OK !</button>
+        </div>
+    </div>
+    
     <script src="./js/store.js" defer></script>
     <script src="./js/app.js" defer></script>
+    <script src="./js/popup.js" defer></script>
 </body>
 
 </html>

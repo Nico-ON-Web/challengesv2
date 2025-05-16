@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="retour">Retour aux défis</a>
+        <div></div>
+    </header>
+    <div class="container border mentions">
+        <h1>Mentions légales et obligatoires</h1>
+        <p>Ce site est un serious game crée a des fins de formation et d'acquisition de compétences dans le domaine de la programmation en javascript et du developpement de sites web</p>
+        <h2 class="mt32">Personne ne s'acharne a lire les CGU mais les voila quand meme :</h2>
+        <p>Pour acceder a l'espace d'admin connectez vous avec l'identifiant admin</p>
+        <h2 class="mt32">Et du coup ?</h2>
+        <div class="flex">
+            <input type="checkbox" name="cgu" id="cgu">
+            <p>Veuillez accepter les conditions générales d'utilisation</p>
+        </div>
+        <p>Sinon faudrait penser a faire quelques défis supplémentaires quand même !</p>
+    </div>
+    <div id="popup">
+        <div class="modal border">
+            <div id="popupContent"></div>
+            <button id="closeModal" class="btn">OK !</button>
+        </div>
+    </div>
+    <script src="./js/store.js" defer></script>
+    <script src="./js/eggs.js" defer></script>
+    <script src="./js/popup.js" defer></script>
+    <script defer>
+        const cgu = document.getElementById("cgu")
+        cgu.addEventListener("change",()=>{
+            if(cgu.checked){
+                pop(3)
+                saveBadge(3)
+            }
+        })
+    </script>
+</body>
+</html>

@@ -5,3 +5,5 @@ if(token == "123456"){
 }else if(token=="maisquesquecestquecetruc"){
     saveBadge(2)
 }
+
+

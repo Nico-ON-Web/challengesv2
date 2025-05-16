@@ -109,3 +109,5 @@ fetch("./badges.json").then(rep=>rep.json()).then(data=>{
 }
 
 updateBadges()
+
+
