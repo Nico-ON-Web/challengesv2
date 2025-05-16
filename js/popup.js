@@ -36,18 +36,19 @@ function popVictoire(exo){
     <h2 class="modal-coupes">${coupes}</h2>
     <h3>Tu es sur une super continue comme ca 💪🚀</h3>
     `
-       popup.style.display = "flex"
-            setTimeout(()=>{
-                 // puis transition sur l'apparition de la modale
-            modal.style.transform = 'translateY(0)'
-            },300)
+    popup.style.display = "flex"
+    setTimeout(()=>{
+    // puis transition sur l'apparition de la modale
+        modal.style.transform = 'translateY(0)'
+    },300)
 }
 
 let closeBtn = document.getElementById("closeModal")
 closeBtn.addEventListener("click",()=>{
-     modal.style.transform = 'translateY(-100vh)'
+    modal.style.transform = 'translateY(-100vh)'
     setTimeout(()=>{         
            popup.style.display = "none";
             },600)
     
 })
+
