@@ -4,7 +4,7 @@ if(token == "123456"){
     pop(1)
     saveBadge(1)
 }else if(token=="maisquesquecestquecetruc"){
-     pop(2)
+    pop(2)
     saveBadge(2)
 }
 

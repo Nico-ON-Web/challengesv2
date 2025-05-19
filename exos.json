@@ -45,7 +45,7 @@
         "illustration": "./assets/todo_illu.jpg",
         "sujet" : "./exos/todolist_exo.jpg",
         "niveau": 2,
-        "resume" : "Un chronomètre en js"
+        "resume" : "Une todo liste rapido ! "
     },
     {
         "id":7,
