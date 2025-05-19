@@ -81,8 +81,6 @@ function deleteExo(id){
         counter = counter + element.niveau
         }
     }
-    
-
-    
+      
     return  counter
 }
