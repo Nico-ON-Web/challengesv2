@@ -88,7 +88,7 @@ function buildNiveauPictos(n){
 }
 
 console.log("%cTu as bien fait d' ouvrir la console !", "font-size: 32px; color: orangered")
-console.log("%c Va voir ici : http://127.0.0.1:5500/eggs.html?token=123456","font-size: 18px")
+console.log("%c Va voir ici : https://nico-on-web.github.io/challengesv2/eggs.html?token=123456","font-size: 18px")
 
 
 const divBadges = document.querySelector("#badges")
