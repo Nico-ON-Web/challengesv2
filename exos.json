@@ -62,6 +62,14 @@
         "sujet" : "./exos/jour_exo.jpg",
         "niveau": 2,
         "resume" : "un contenu qui change en fonction de l'heure qu'il est"
+    },
+    {
+        "id":9,
+        "titre": "Code César",
+        "illustration": "./assets/cesar.jpg",
+        "sujet" : "./exos/codeCesar.jpg",
+        "niveau": 3,
+        "resume" : "Encoder un message secret"
     }
 
 ]
