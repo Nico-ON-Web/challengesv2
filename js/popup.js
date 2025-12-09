@@ -34,7 +34,7 @@ function popVictoire(exo){
     <h2 class="mt32">${exo.titre}</h2>
     <p>Bravo ! ce défi vient de te remporter ${exo.niveau} coupe(s)</p>
     <h2 class="modal-coupes">${coupes}</h2>
-    <h3>Tu es sur une super continue comme ca 💪🚀</h3>
+    <h3>Belle victoire continue comme ca 💪🚀</h3>
     `
     popup.style.display = "flex"
     setTimeout(()=>{
