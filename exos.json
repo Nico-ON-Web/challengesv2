@@ -70,6 +70,13 @@
         "sujet" : "./exos/codeCesar.jpg",
         "niveau": 3,
         "resume" : "Encoder un message secret"
+    }, {
+        "id":10,
+        "titre": "La Terre Plate",
+        "illustration": "./assets/terreplate-illu.jpg",
+        "sujet" : "./exos/terrePlate-exo.jpg",
+        "niveau": 3,
+        "resume" : "Déplacer un objet"
     }
 
 ]
